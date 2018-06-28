@@ -1,0 +1,17 @@
+<% if @glitter == true %>
+<h1> Congrats! You are a magical member of Unicorn World! </h1>
+
+<h2> At Unicorn World, us unicorns create a magically happy place for all friends and family. </h2>
+<h3> Meet all of our unicorn friends: </h3>
+<ul><% Unicorn.names.each do |name, description| %>
+  <li><%= name %>, <%= description %></li>
+  <% end %></ul>
+
+<h3> Let's figure out which unicorn will be your best friend! </h3>
+<form method="POST" action="/color">
+  <h3>What is your favorite color? <input type="text" name="color"></h3>
+  <input type="submit">
+</form>
+<%else%>
+<h1> We don't like unicorn haterz </h1>
+<% end %>

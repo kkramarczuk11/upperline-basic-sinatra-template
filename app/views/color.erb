@@ -1,0 +1,46 @@
+<% if @friend.has_key?(@color) %>
+<h1> Your new best friend is <%= @friend[@color] %>!</h1>
+    <% if @friend[@color] == "Lady Liberty" %>
+      <body id="white">
+        <img src="https://rlv.zcache.com/red_white_blue_patriotic_american_unicorn_ceramic_tile-r0c74d492ad6a4f5b90de421765d859b8_agtk1_8byvr_324.jpg">
+      </body>
+        <% elsif @friend[@color] == "Lady Peace"%>
+      <img src="https://banner2.kisspng.com/20180201/pae/kisspng-sweet-dreams-pretty-purple-and-turquoise-unicorn-water-color-illusion-unicorn-5a7301f7e9c8d0.8990610515174865839576.jpg" >
+    <% elsif @friend[@color] == "Lady Sunshine"%>
+      <img src="https://cdn2.vectorstock.com/i/1000x1000/94/56/cartoon-baby-unicorn-vector-249456.jpg">
+    <% elsif @friend[@color] == "Lady Glitter Sparkles"%>
+      <img src="https://thumbs.dreamstime.com/b/beautiful-pink-unicorn-10063789.jpg">
+    <% elsif @friend[@color] == "Lady Nightmare"%>
+      <img src="https://i.pinimg.com/originals/26/3d/43/263d430667420c7ae2972b7d9507d593.jpg">
+    <% elsif @friend[@color] == "Lady Bubbles"%>
+      <img src="https://i.pinimg.com/736x/b6/92/76/b69276c4e135c42fdc0c68ff7f61be3d--art-school-unicorns.jpg">
+    <% elsif @friend[@color] == "Lady Studious"%>
+      <img src="https://vignette.wikia.nocookie.net/valleyofunicorns/images/9/9e/Emerald_Wind_Unicorn_V2.png/revision/latest?cb=20141204074136">
+    <% elsif @friend[@color] == "Lady Lovely"%>
+      <img src="http://www.pngmart.com/files/3/Unicorn-PNG-Clipart.png">
+    <% elsif @friend[@color] == "Lady Schmoney"%>
+      <img src="https://vignette.wikia.nocookie.net/valleyofunicorns/images/2/2c/Liquid_Gold_Unicorn_V2.png/revision/latest?cb=20131202040623">
+    <% elsif @friend[@color] == "Lady Dashing"%>
+      <img src="https://vignette.wikia.nocookie.net/valleyofunicorns/images/9/90/Liquid_Silver_Unicorn_V2.png/revision/latest?cb=20131202040638">
+    <% elsif @friend[@color] == "Lady Royalty"%>
+      <img src=https://img00.deviantart.net/9992/i/2004/159/5/6/last_unicorn_purple__neri_chan.jpg>
+    <% elsif @friend[@color] == "Lady Slice"%>
+      <img src="https://pbs.twimg.com/profile_images/670056876185382913/Gm51F68t_400x400.jpg">
+    <% elsif @friend[@color] == "Lady Fire"%>
+      <img src="https://buffy.mlpforums.com/monthly_04_2013/post-9830-0-21228200-1366565425.png">
+    <% elsif @friend[@color] == "Lady Ice"%>
+      <img src="https://cdn1.vectorstock.com/i/thumb-large/19/15/cute-cartoon-blue-unicorn-with-pink-hair-vector-15881915.jpg">
+    <% elsif @friend[@color] == "Lady Rainbow"%>
+      <img src="https://img00.deviantart.net/090e/i/2017/016/b/8/_closed__random_rainbow_unicorn_adopt_by_furreon-d91wx3f.png">
+<% end %>
+<%else%>
+<h3>Please go back and try again.<h3>
+<%end%>
+
+<style>
+#white {background-color: red;
+        border: 10px dotted blue;
+        text-align: center;
+        color: white;}
+h1 {font-family: Courier;
+    font-size: 50px;}

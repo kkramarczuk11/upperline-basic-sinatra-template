@@ -10,4 +10,20 @@ class ApplicationController < Sinatra::Base
   get '/' do
     return erb :index
   end
+
+  post '/glitter' do
+    if params[:yes].downcase == "yes"
+    @glitter = true
+  else
+    @glitter = false
+  end
+  return erb :glitter
+    end
+
+  post '/color' do
+    @color = params[:color]
+    @friend = Unicorn.friend
+  return erb :color
+  end
+
 end
